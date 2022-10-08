@@ -379,6 +379,12 @@ async function start_game(url) {
   startid = gamedata['start'];
 	navtag.textContent = gamedata['title']
 	let preloads = []
+	function change_hash(hash) {
+		const waschanged = window.location.hash.substring(1) != hash;
+		console.log(waschanged)
+		window.location.hash = hash;
+		if (!waschanged) { onhashchange(); }
+	}
 	async function show_node(node) {
 		imgsrc = get_image(node);
 		found = false;
@@ -408,7 +414,7 @@ async function start_game(url) {
 			btn.innerHTML = link['content'];
 			let target = link['target'];
 			btn.onclick = function() {
-				window.location.hash = target;
+				change_hash(target);
 			};
 			btn.classList.add("link-type-"+link['type'])
 			linkstag.appendChild(btn);
@@ -426,7 +432,7 @@ async function start_game(url) {
 			let btn = document.createElement("button");
 			btn.innerHTML = "Start Over";
 			btn.onclick = function() {
-				window.location.hash = startid;
+				change_hash(startid);
 			};
 			btn.classList.add("link-type-start-over")
 			linkstag.appendChild(btn);

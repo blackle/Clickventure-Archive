@@ -49,7 +49,7 @@ async function generate_list(url) {
   	indicator.style.width = ratio + "%";
   	value.textContent = ratio + "%";
 
-  	play.href = game['slug'] + "/index.html";
+  	play.href = game['slug'] + "/";
 
   	title.innerHTML = game['title'];
   	container.appendChild(clickventure);

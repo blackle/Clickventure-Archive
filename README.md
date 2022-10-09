@@ -15,7 +15,7 @@ To archive, do:
 ./indexer.py # generates the viewer html files and main game index
 ```
 
-An already archived version can be download from the internet archive (link pending)
+An already archived version can be download from the [internet archive](https://archive.org/details/clickhole-archive-project-v-1-2022-10-09.tar)
 
 ## Playing
 

@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="_viewer.css">
+	<title>Clickventure Archive Project</title>
+</head>
+<body>
+<template id="clickventure-template">
+	<div class="clickventure">
+		<img src="#" />
+		<h2></h2>
+		<div class="info-grid">
+			<div>Date published:</div>
+			<div class="date-published"></div>
+			<div>Node count:</div>
+			<div class="node-count"></div>
+			<div>Original URL:</div>
+			<a class="original-url"></a>
+			<div>Images present:</div>
+			<div class="meter">
+				<div class="indicator" style="width:44%"></div>
+				<div class="value">44%</div>
+			</div>
+		</div>
+		<a href="#" class="play">Play</a>
+	</div>
+</template>
+<nav><div></div><div id="clickventure-header">Clickventure Archive Project</div><a id="clickventure-settings">Settings</a></nav>
+<div class="container">
+</div>
+<div id="settings-container" class="hidden">
+<div id="settings-content">
+	<div id="settings-back"></div>
+	<h3>Settings</h3>
+	<div id="settings-list">
+		<div class="settings-list-item">
+			<input type="checkbox" id="disable-animations" name="disable-animations"/>
+			<label for="disable-animations">Disable animations</label>
+		</div>
+	</div>
+</div>
+</div>
+<script src="_index.js"></script>
+<script src="_settings.js"></script>
+</body>
+</html>

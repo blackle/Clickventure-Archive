@@ -13,6 +13,7 @@ shutil.copyfile("../_settings.js", "settings.js")
 
 shutil.copyfile("../_viewer.js", "viewer.js")
 shutil.copyfile("../_viewer.html", "viewer.html")
+shutil.copyfile("../null.jpg", "img/null.jpg")
 
 clickventures = []
 for filename in glob("./*/data.json"):

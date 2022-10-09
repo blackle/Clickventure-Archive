@@ -12,6 +12,15 @@ function is_no_animation() {
 	return localStorage.getItem('no-animation') == "true";
 }
 
+//called from settings.js
+function on_is_no_animation_changed() {
+	if (is_no_animation()) {
+		document.body.classList.add("no-animation")
+	} else {
+		document.body.classList.remove("no-animation")
+	}
+}
+
 // setinterval that automatically cancels/calls the previous interval
 function delayifyer() {
 	currtimeout = -1;

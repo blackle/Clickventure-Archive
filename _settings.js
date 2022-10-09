@@ -15,14 +15,6 @@ settings_link.onclick = settings_toggler(settings_link);
 settings_back.onclick = settings_toggler(settings_back);
 settings_container.onclick = settings_toggler(settings_container);
 
-function on_is_no_animation_changed() {
-	if (is_no_animation()) {
-		document.body.classList.add("no-animation")
-	} else {
-		document.body.classList.remove("no-animation")
-	}
-}
-
 disable_animations.checked = localStorage.getItem('no-animation') == "true";
 disable_animations.onchange = function () {
 	localStorage.setItem('no-animation', disable_animations.checked ? "true" : "false");

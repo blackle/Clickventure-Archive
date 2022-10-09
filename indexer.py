@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 from glob import glob
 import json
+import shutil
+
+shutil.copyfile("_index.html", "out/index.html")
+shutil.copyfile("_index.js", "out/index.js")
 
 clickventures = []
 for filename in glob("out/*/data.json"):
@@ -10,7 +14,7 @@ for filename in glob("out/*/data.json"):
 	num_imgs = len([node for node in data["nodes"] if 'img' in node and node['img'] != "null.jpg"])
 	clickventure = {
 		"img": data["img"],
-		"tile": data["title"],
+		"title": data["title"],
 		"schema": data["schema"],
 		"slug": data["slug"],
 		"url": data["url"],

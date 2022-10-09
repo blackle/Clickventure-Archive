@@ -26,7 +26,6 @@ async function generate_list(url) {
   	return game['schema']['datePublished'];
   });
   for (const game of gamelist) {
-  	console.log(game)
   	var clickventure = clickventure_template.content.cloneNode(true);
 
   	const title = clickventure.querySelector("h2");
@@ -50,7 +49,7 @@ async function generate_list(url) {
   	indicator.style.width = ratio + "%";
   	value.textContent = ratio + "%";
 
-  	play.href = game['slug'];
+  	play.href = game['slug'] + "/index.html";
 
   	title.innerHTML = game['title'];
   	container.appendChild(clickventure);

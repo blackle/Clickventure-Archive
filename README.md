@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/3506025/194772968-953b551e-c910-492c-b117-13dd60a4d537.png">
+</p>
+
 # Clickventure Archive Project
 
 This is a project to archive the clickhole clickventures so they are playable locally. This involved "decompiling" the adventures into a json format, and writing a player for them from scratch.
